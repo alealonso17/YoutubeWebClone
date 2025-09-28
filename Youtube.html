@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <title>Youtube</title>
+</head>
+
+<body>
+    <header>
+        <div class="left">
+            <button><img src="./Icons/menu.svg" id="menuIcon" height="24px" width="24px" alt="menu icon"
+                    title="menu icon" /></button>
+            <button><img src="./Icons/ytLogo.svg" id="ytLogo" height="19px" width="93px" alt="ytLogo"
+                    title="ytLogo" /></button>
+        </div>
+        <div class="center">
+            <input type="text" class="searchBar" name="searchbox" placeholder="Search..." />
+            <button class="buttonHoverStyleRounded"><img src="./Icons/voice.svg" alt="voice" title="voice"
+                    heigth=".9"></button>
+        </div>
+        <div class="right">
+            <button class="buttonHoverStyleAuto"><img src="./Icons/add.svg" height="20px" width="20px">Crear </button>
+            <button class="buttonHoverStyleRounded"> <img src="./Icons/notificationIcon.svg" alt="voice" title="voice"
+                    heigth=".9"> </button>
+            <img src="./profilePic.png" id="profilePic" alt="profilePic.png" title="profilePic.png" height="30px"
+                width="30px" />
+        </div>
+
+
+    </header>
+</body>
+
+
+<style>
+    body {
+        background-color: #0f0f0f;
+        font-family: 'Roboto', sans-serif;
+    }
+
+
+    header button {
+        cursor: pointer;
+        background: none;
+        border-color: transparent;
+    }
+
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header .left {
+        display: flex;
+        align-items: center;
+        margin-left: .5rem;
+        gap: .8rem;
+    }
+
+    header .center {
+        display: flex;
+        gap: .5rem;
+    }
+
+    header .right {
+        display: flex;
+        gap: .8rem;
+    }
+
+    header .right #profilePic {
+        border-radius: 50%;
+    }
+
+    header .center input.searchBar {
+        border-radius: 20px;
+        background-color: #1e1d1d;
+        border: 1px solid #363636;
+        width: 350px;
+        height: auto;
+        text-indent: 1rem;
+        transition: border-color 1s, color 1s, background-color 1s;
+        caret-color: white;
+    }
+
+    header .center input.searchBar:focus {
+        border-color: white;
+        outline: none;
+    }
+
+    header .center input.searchbar:focus::placeholder {
+        color: white;
+    }
+
+    button.buttonHoverStyleAuto {
+        display: flex;
+        align-items: center;
+        font-family: 'Roboto', Courier, monospace;
+        border-radius: 999px;
+        width: 80px;
+        background-color: #2d2d2d;
+        color: white;
+        border: 1px transparent solid;
+        text-indent: 7px;
+
+    }
+
+    button.buttonHoverStyleAuto:hover {
+        cursor: pointer;
+        background-color: #414141;
+    }
+
+    button.buttonHoverStyleRounded {
+        display: flex;
+        align-items: center;
+        font-family: 'Roboto', Courier, monospace;
+        border-radius: 999px;
+        width: auto;
+        height: auto;
+        background-color: #2d2d2d;
+        color: white;
+        border: 1px transparent solid;
+        text-indent: 7px;
+
+    }
+
+    button.buttonHoverStyleRounded:hover {
+        cursor: pointer;
+        background-color: #414141;
+    }
+</style>
+
+</html>
